@@ -1,15 +1,29 @@
 public class Account {
-    private int accountNumber;
+    private double accountNumber;
     private double balance;
     private String customerName;
     private String email;
-    private int phoneNumber;
+    private String phoneNumber;
 
-    public int getAccountNumber() {
+    public Account(){
+        this(20145, 0.0, "Default name", "default@gmail.com", "(024) 215 6985");
+        System.out.println("Empty constructor called.");
+    }
+
+    public Account(int accountNumber, double balance, String customerName, String email, String phoneNumber){
+        System.out.println("Account class called with parameters");
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
+    public double getAccountNumber() {
         return accountNumber;
     }
 
-    public void setAccountNumber(int accountNumber) {
+    public void setAccountNumber(double accountNumber) {
         this.accountNumber = accountNumber;
     }
 
@@ -17,7 +31,7 @@ public class Account {
         return balance;
     }
 
-    public void setBalance(int balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 
@@ -37,11 +51,11 @@ public class Account {
         this.email = email;
     }
 
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
