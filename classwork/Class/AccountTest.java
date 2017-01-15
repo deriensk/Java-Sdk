@@ -15,6 +15,14 @@ public class AccountTest{
         mikeAccount.withdraw(60);
         mikeAccount.deposit(200);
         mikeAccount.withdraw(150);
+
+
+        
+        Account deanAccount = new Account("Dean",
+                "dean@gmail.com", "(456) 458 7854");
+        System.out.println(deanAccount.getAccountNumber());
+        System.out.println(deanAccount.getBalance());
+        System.out.println(deanAccount.getEmail());
         
 
 	}

@@ -26,6 +26,3 @@ elif month == 12:
     print("The " +  str(month)  + "th" + " month of the year is " + "December")
 else:
     print("Invalid digit for the month")
-
-        
-        

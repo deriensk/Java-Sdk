@@ -5,11 +5,20 @@ public class Account {
     private String email;
     private String phoneNumber;
 
+
+    //passing all the parameters (mike's account)
     public Account(){
         this(20145, 0.0, "Default name", "default@gmail.com", "(024) 215 6985");
         System.out.println("Empty constructor called.");
     }
 
+    //passing two default arguments (dean's account)
+    public Account(String customerName, String email, String phoneNumber) {
+        this(201532, 120d, customerName, email, phoneNumber);
+
+    }
+
+    // myAccount
     public Account(int accountNumber, double balance, String customerName, String email, String phoneNumber){
         System.out.println("Account class called with parameters");
         this.accountNumber = accountNumber;
