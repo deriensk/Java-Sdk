@@ -76,9 +76,10 @@ public class Account {
     }
 
     public void withdraw(double withdrawAmount){
-        if (this.balance - withdrawAmount <= 0){
+        if (this.balance - withdrawAmount < 0){
             System.out.println("Insufficient amount to withdraw. Your balance is " + this.balance);
-        }else{
+        }
+        else{
             this.balance -= withdrawAmount;
             System.out.println("Amount " + withdrawAmount + " has been withdrawn from your account." );
             System.out.println("Your current balance is " + this.balance);

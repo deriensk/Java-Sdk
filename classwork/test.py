@@ -1,28 +1,85 @@
-month = int(raw_input("Enter the digit of the month to know its name: "))
+# num = [5,7,3,9,1,9]
 
-if month == 1:
-	print("The " +  str(month)  + "th" + " month of the year is " + "January")
-elif month == 2:
-	print("The " +  str(month)  + "th" + " month of the year is " + "February")
-elif month == 3:
-    print("The " +  str(month)  + "th" + " month of the year is " + "March")
-elif month == 4:
-    print("The " +  str(month)  + "th" + " month of the year is " + "April")
-elif month == 5:
-    print("The " +  str(month)  + "th" + " month of the year is " + "May")
-elif month == 6:
-    print("The " +  str(month)  + "th" + " month of the year is " + "June")
-elif month == 7:
-    print("The " +  str(month)  + "th" + " month of the year is " + "July")
-elif month == 8:
-    print("The " +  str(month)  + "th" + " month of the year is " + "August")
-elif month == 9:
-    print("The " +  str(month)  + "th" + " month of the year is " + "September")
-elif month == 10:
-    print("The " +  str(month)  + "th" + " month of the year is " + "October")
-elif month == 11:
-    print("The " +  str(month)  + "th" + " month of the year is " + "November")
-elif month == 12:
-    print("The " +  str(month)  + "th" + " month of the year is " + "December")
-else:
-    print("Invalid digit for the month")
+# l = []
+# largest = None
+
+# for item in num:
+#     if item >= largest:
+#         largest = item
+# l.append(largest)      
+# index_find = num.index(largest)
+# num.pop(index_find)
+
+# #2
+# largest = None
+# for item in num:
+#     if item >= largest:
+#         largest = item
+# l.append(largest)      
+# index_find = num.index(largest)
+# num.pop(index_find)
+
+# #3
+# largest = None
+# for item in num:
+#     if item >= largest:
+#         largest = item
+# l.append(largest)      
+# index_find = num.index(largest)
+# num.pop(index_find)
+
+# #4
+
+# largest = None
+# for item in num:
+#     if item >= largest:
+#         largest = item
+# l.append(largest)      
+# index_find = num.index(largest)
+# num.pop(index_find)
+
+# #5
+# largest = None
+# for item in num:
+#     if item >= largest:
+#         largest = item
+# l.append(largest)      
+# index_find = num.index(largest)
+# num.pop(index_find)
+
+# #6
+# largest = None
+# for item in num:
+#     if item >= largest:
+#         largest = item
+# l.append(largest)      
+# index_find = num.index(largest)
+# num.pop(index_find)
+
+
+# print num
+# print largest,l 
+
+num = [5,7,3,9,1,9]
+
+def rec(listo):
+
+
+    l = []
+    largest = None
+
+    for item in num:
+        if item >= largest:
+            largest = item
+    l.append(largest)      
+    index_find = num.index(largest)
+    num.pop(index_find)
+    if len(listo) == 0:
+        exit()
+    print l, listo   
+
+    return rec(listo)
+
+
+a= rec(num)
+print a
