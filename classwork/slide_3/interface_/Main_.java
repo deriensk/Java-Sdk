@@ -7,7 +7,9 @@ public class Main_ {
         System.out.println();
 
         Bank_ global = new Global_();
-        printName(global.getBankName(), global.getRate());
+        printName(global.getBankName(), global.getRate(), global.srRate);
+        //right way is to follow Bank_.srRate above in the third arguement
+
 
     }
 
@@ -17,7 +19,7 @@ public class Main_ {
 
     }*/
 
-    public static void printName(String bankName, double rate){
+    public static void printName(String bankName, double rate, int srRates){
         System.out.println(bankName + " " + rate);
 
     }

@@ -7,5 +7,5 @@ public interface Bank_ {
 
     double getRate();
 
-    //int srRate = 12.04;
+    int srRate = 12.04;
 }
